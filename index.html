@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -23,24 +22,6 @@
     <div id="one"></div>
     <div id="two"></div>
     <div id="three"></div>
-  
-    <script>
-      window.onload = function() {
-        extend({
-          duration: 700,
-          draw: function(progress) { one.style.width = progress * 100 + '%' },
-        });
-        extend({
-          duration: 900,
-          draw: function(progress) { two.style.width = progress * 100 + '%' },
-
-        });
-        extend({
-          duration: 1100,
-          draw: function(progress) { three.style.width = progress * 100 + '%' },
-        });
-      };
-    </script>
   </body>
 </html> 
 

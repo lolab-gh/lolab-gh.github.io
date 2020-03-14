@@ -20,21 +20,27 @@ a:hover {
   color: #ff6b35;
 }
 
-#one, #two, #three {
-  height: 10px;
-  width: 0%;
+@keyframes slidein {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 
 #one {
-  border-bottom: 8px solid #e8e8e8;
+  border-bottom: 6px solid #2e2e3a;
+  animation: 1s linear slidein;
+  height: 20px;
 }
 
 #two {
-  border-bottom: 8px solid #ff6b35;
+  border-bottom: 10px solid #ff6b35;
+  animation: .7s linear slidein;
+  height: 8px;
 }
 
 #three {
-  border-bottom: 15px solid #2e2e3a;
+  border-bottom: 40px solid #e8e8e8;
+  animation: 1.3s linear slidein;
+  height: 15px;
 }
 
 .wrapper {
@@ -44,3 +50,4 @@ a:hover {
   padding: 100px 30px 0;
   margin-bottom: 20px;
 }
+
